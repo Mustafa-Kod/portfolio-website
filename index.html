@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Hezaren Web Geliştirme Uzmanı</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-xl font-bold gradient-text hover:opacity-80 transition-opacity cursor-pointer">Mustafa Hezaren</a>
+                <div class="flex space-x-8">
+                    <a href="#projects" class="hover:text-purple-400 transition-colors">Projelerim</a>
+                    <a href="#contact" class="hover:text-purple-400 transition-colors">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-16 bg-black">
+        <div class="max-w-7xl mx-auto px-4 w-full">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        Merhaba, Ben <span class="gradient-text">Mustafa Hezaren</span>
+                    </h1>
+                    <div class="space-y-2 text-container">
+                        <p class="text-xl md:text-2xl text-gray-400 animate-text-line skill-text" style="--delay: 0">
+                            <span class="text-line">Web Geliştirme Uzmanıyım.</span>
+                        </p>
+                        <p class="text-xl md:text-2xl text-gray-400 animate-text-line skill-text" style="--delay: 1">
+                            <span class="text-line">Hayalinizdeki web sitesini tasarlarım.</span>
+                        </p>
+                        <p class="text-xl md:text-2xl text-gray-400 animate-text-line skill-text" style="--delay: 2">
+                            <span class="text-line">Tecrübelerim doğrultusunda sade ve kullanıcı dostu bir siteye sahip olursunuz.</span>
+                        </p>
+                        <p class="text-xl md:text-2xl text-gray-400 animate-text-line skill-text" style="--delay: 3">
+                            <span class="text-line">İlk intiba çok önemlidir, bırakın o işi web siteniz halletsin.</span>
+                        </p>
+                    </div>
+                    <a href="#contact" class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-block mt-8 animate-fade-in-delay-2">
+                        İletişim
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 animate-fade-in-delay">
+                    <div class="laptop-image-container">
+                        <img src="./assets/laptop.png" alt="3D Laptop" class="w-full h-auto transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 gradient-text text-center">Projelerim</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gray-800 relative group">
+                        <div class="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-400">Project 1</h3>
+                        <p class="text-gray-400 mb-4">Description of your first project. Highlight the key features and technologies used.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">React</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gray-800 relative group">
+                        <div class="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-400">Project 2</h3>
+                        <p class="text-gray-400 mb-4">Description of your second project. Highlight the key features and technologies used.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">TypeScript</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gray-800 relative group">
+                        <div class="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-400">Project 3</h3>
+                        <p class="text-gray-400 mb-4">Description of your third project. Highlight the key features and technologies used.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">Vue.js</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="h-48 bg-gray-800 relative group">
+                        <div class="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-purple-400">Project 4</h3>
+                        <p class="text-gray-400 mb-4">Description of your fourth project. Highlight the key features and technologies used.</p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">Angular</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-purple-400">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gradient-text">İletişim</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-purple-400 mb-2">İsim</label>
+                    <input type="text" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-purple-400 mb-2">E-Posta</label>
+                    <input type="email" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-purple-400 mb-2">Mesajınız</label>
+                    <textarea rows="4" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                    Gönder
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
+            <p>© 2025 Mustafa Hezaren Portfolyo. Her hakkı saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

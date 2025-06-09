@@ -1,0 +1,295 @@
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(45deg, #9333EA, #4F46E5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced gradient text */
+.gradient-text {
+    background: linear-gradient(90deg, #9333EA, #4F46E5, #9333EA);
+    background-size: 200% auto;
+    animation: gradientShift 3s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Animation classes */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-fade-in-delay {
+    opacity: 0;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0.7s forwards;
+}
+
+.animate-fade-in-delay-2 {
+    opacity: 0;
+    animation: fadeInUp 1.5s cubic-bezier(0.23, 1, 0.32, 1) 1.4s forwards;
+}
+
+/* Laptop container styles with enhanced animation */
+.laptop-image-container {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(147, 51, 234, 0.1);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0;
+    animation: slideInFromRight 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0.7s forwards,
+               floatAnimation 3s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(147, 51, 234, 0.1);
+}
+
+.laptop-image-container:hover {
+    background: rgba(147, 51, 234, 0.15);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.2);
+}
+
+/* Project card animations */
+.bg-gray-900 {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bg-gray-900:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.2);
+}
+
+/* Form elements animation */
+input, textarea {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #9333EA;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(147, 51, 234, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #9333EA, #4F46E5);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #4F46E5, #9333EA);
+}
+
+/* Navigation link animations */
+nav a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(90deg, #9333EA, #4F46E5);
+    transition: width 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Button hover animation */
+.bg-purple-600 {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bg-purple-600:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(147, 51, 234, 0.3);
+}
+
+.bg-purple-600::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.bg-purple-600:hover::after {
+    left: 100%;
+}
+
+/* Text animation container */
+.text-container {
+    margin: 2rem 0;
+}
+
+/* Text line wrapper */
+.animate-text-line {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 0;
+}
+
+/* Individual text line animation */
+.text-line {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideUpFade 0.8s cubic-bezier(0.5, 0, 0.1, 1) forwards;
+    animation-delay: calc(var(--delay) * 0.2s + 1s);
+}
+
+/* Text animations */
+@keyframes slideUpFade {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effect for text lines */
+.animate-text-line:hover .text-line {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+    color: #9333EA;
+}
+
+/* Make sure the text container has relative positioning */
+.text-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Custom cursor only for skill text */
+.skill-text {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%2322c55e' d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E") 12 12, pointer;
+}
+
+/* Keep your existing text animation styles */
+.text-line {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideUpFade 0.8s cubic-bezier(0.5, 0, 0.1, 1) forwards;
+    animation-delay: calc(var(--delay) * 0.2s + 1s);
+}
+
+/* Keep your existing animations */
+@keyframes slideUpFade {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
