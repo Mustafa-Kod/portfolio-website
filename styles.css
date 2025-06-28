@@ -293,3 +293,29 @@ nav a:hover::after {
         opacity: 1;
     }
 }
+
+/* Modal animations */
+#imageModal {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#imageModal img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#imageModal.opacity-0 {
+    opacity: 0;
+}
+
+#imageModal:not(.opacity-0) {
+    opacity: 1;
+}
+
+/* Project image container */
+.project-image-viewer img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image-viewer:hover img {
+    transform: scale(1.05);
+}
