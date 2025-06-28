@@ -6,6 +6,7 @@
     <title>Mustafa Web Geliştirme Uzmanı</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-black text-white">
     <!-- Navigation -->
@@ -185,20 +186,37 @@
             <form class="space-y-6">
                 <div>
                     <label class="block text-purple-400 mb-2">İsim</label>
-                    <input type="text" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none">
+                    <input type="text" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required">
                 </div>
                 <div>
                     <label class="block text-purple-400 mb-2">E-Posta</label>
-                    <input type="email" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none">
+                    <input type="email" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required">
                 </div>
                 <div>
                     <label class="block text-purple-400 mb-2">Mesajınız</label>
-                    <textarea rows="4" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"></textarea>
+                    <textarea rows="4" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required"></textarea>
                 </div>
                 <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
                     Gönder
                 </button>
             </form>
+            <div class="flex justify-center items-center gap-4 mt-2">
+                <a href="#contact"
+                    class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-block mt-8 animate-fade-in-delay-2">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Whatsapp
+                </a>
+                <a href="https://x.com/mustakod"
+                    class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-block mt-8 animate-fade-in-delay-2">
+                    <i class="fab fa-x-twitter mr-2"></i>
+                    (Önceden Twitter)
+                </a>
+                <a href="https://www.instagram.com/musta.kod/"
+                    class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors inline-block mt-8 animate-fade-in-delay-2">
+                    <i class="fab fa-instagram mr-2"></i>
+                    Instagram
+                </a>
+            </div>
         </div>
     </section>
 
