@@ -268,8 +268,20 @@
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text">İletişim</h2>
     
-            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+            <!-- Updated Contact Form -->
+            <form name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field"
+                class="space-y-6">
+            
+                <!-- Hidden input for Netlify -->
                 <input type="hidden" name="form-name" value="contact" />
+            
+                <!-- Honeypot field for spam prevention -->
+                <div class="hidden">
+                    <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                    </label>
+                </div>
+            
                 <div>
                     <label for="isim" class="block text-purple-400 mb-2">İsim</label>
                     <input id="isim" type="text" name="name"
