@@ -24,6 +24,73 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://mustakod.com/" />
+    
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Mustafa",
+          "url": "https://mustakod.com/",
+          "sameAs": [
+            "https://github.com/Mustafa-Kod",
+            "https://x.com/mustakod",
+            "https://www.instagram.com/musta.kod/"
+          ],
+          "jobTitle": "Web Geliştirme Uzmanı",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Mustakod"
+          },
+          "description": "Mustafa, Türkiye merkezli bir freelance web geliştirme uzmanıdır. Modern, kullanıcı dostu ve duyarlı web siteleri oluşturma konusunda uzmanlaşmıştır.",
+          "image": "https://mustakod.com/assets/laptop.png",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mustakod.com/"
+          },
+          "knowsAbout": ["Web Development", "Frontend Development", "HTML", "CSS", "JavaScript", "TypeScript", "TailwindCSS"],
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Restoran Projesi",
+              "description": "Kullanıcı dostu, modern bir restoran web sitesi.",
+              "url": "https://github.com/Mustafa-Kod/restoran-website",
+              "genre": "Web Development",
+              "keywords": "HTML, CSS, JavaScript"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "E-Ticaret Projesi",
+              "description": "Güncel e-ticaret gereksinimlerine uygun bir web sitesi.",
+              "url": "https://github.com/Mustafa-Kod/e-commerce-portfolio",
+              "genre": "Web Development",
+              "keywords": "TypeScript"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Portfolyo Projesi",
+              "description": "Farklı meslek gruplarının ihtiyaçlarına hitap eden portfolyo sitesi.",
+              "url": "https://github.com/Mustafa-Kod/portfolyo-turkiye-demo",
+              "genre": "Web Development",
+              "keywords": "HTML, CSS, JavaScript"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Eğitim Platformu Projesi",
+              "description": "Eğitmenlerin ve öğrencilerin ihtiyaçlarına yönelik bir eğitim web sitesi.",
+              "url": "https://github.com/Mustafa-Kod/egitim-sitesi",
+              "genre": "Web Development",
+              "keywords": "HTML, CSS, JavaScript"
+            }
+          ]
+        }
+    </script>
+    
+    
 </head>
 <body class="bg-black text-white">
     <!-- Navigation -->
@@ -200,25 +267,34 @@
     <section id="contact" class="py-20 bg-gray-900">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text">İletişim</h2>
-            <form class="space-y-6">
+    
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
-                    <label class="block text-purple-400 mb-2">İsim</label>
-                    <input type="text" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required">
+                    <label for="isim" class="block text-purple-400 mb-2">İsim</label>
+                    <input id="isim" type="text" name="isim"
+                        class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"
+                        required>
                 </div>
                 <div>
-                    <label class="block text-purple-400 mb-2">E-Posta</label>
-                    <input type="email" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required">
+                    <label for="e-posta" class="block text-purple-400 mb-2">E-Posta</label>
+                    <input id="e-posta" type="email" name="e-posta"
+                        class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"
+                        required>
                 </div>
                 <div>
-                    <label class="block text-purple-400 mb-2">Mesajınız</label>
-                    <textarea rows="4" class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none required"></textarea>
+                    <label for="mesaj" class="block text-purple-400 mb-2">Mesajınız</label>
+                    <textarea id="mesaj" name="mesaj" rows="4"
+                        class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"
+                        required></textarea>
                 </div>
                 <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
                     Gönder
                 </button>
             </form>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-2 w-full">
-                <a href="#contact"
+                
+                <a href="https://wa.me/905393768195" target="_blank" rel="noopener noreferrer"
                     class="flex items-center justify-center w-full sm:w-auto bg-purple-600 text-white px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-purple-700 transition-colors mt-2 sm:mt-8 text-base sm:text-lg">
                     <i class="fab fa-whatsapp mr-2"></i>
                     Whatsapp
