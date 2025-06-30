@@ -263,32 +263,25 @@
                 </div>
     </section>
 
-    <!-- Contact Section -->
+    
     <section id="contact" class="py-20 bg-gray-900">
         <div class="max-w-3xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 gradient-text">İletişim</h2>
     
-            <!-- Updated Contact Form -->
-            <form name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field"
-                class="space-y-6">
-            
-                <!-- Hidden input for Netlify -->
-                <input type="hidden" name="form-name" value="contact" />
-            
             
             <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field"
                 class="space-y-6">
-            
-                <!-- Hidden input for Netlify -->
+    
+                <!-- Hidden input for Netlify to identify the form -->
                 <input type="hidden" name="form-name" value="contact" />
-            
+    
                 <!-- Honeypot field for spam prevention -->
-                <div style="display:none;">
+                <div style="display: none;">
                     <label>
                         Don’t fill this out if you’re human: <input name="bot-field" />
                     </label>
                 </div>
-            
+    
                 <div>
                     <label for="isim" class="block text-purple-400 mb-2">İsim</label>
                     <input id="isim" type="text" name="name"
@@ -307,12 +300,13 @@
                         class="w-full bg-black border border-gray-800 rounded-lg p-3 text-white focus:border-purple-500 focus:outline-none"
                         required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
+                <button type="submit"
+                    class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors">
                     Gönder
                 </button>
             </form>
+    
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-2 w-full">
-                
                 <a href="https://wa.me/905393768195" target="_blank" rel="noopener noreferrer"
                     class="flex items-center justify-center w-full sm:w-auto bg-purple-600 text-white px-4 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-purple-700 transition-colors mt-2 sm:mt-8 text-base sm:text-lg">
                     <i class="fab fa-whatsapp mr-2"></i>
